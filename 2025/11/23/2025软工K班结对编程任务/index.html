@@ -1,0 +1,703 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>YeQuDesu Blog | YeQuDesu Blog</title><meta name="author" content="YeQuDesu"><meta name="copyright" content="YeQuDesu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="2025软工K班结对编程任务https:&#x2F;&#x2F;github.com&#x2F;yequdesu&#x2F;SE-cowork https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1A5UwBaEoc?vd_source&#x3D;0b3fb397d505ec7378499f3e04951949 一、结对探索1.1 队伍基本信息结对编号：114514 ；队伍名称：杨炜组；    学号 姓名 作业博客链接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="YeQuDesu Blog">
+<meta property="og:url" content="http://example.com/2025/11/23/2025%E8%BD%AF%E5%B7%A5K%E7%8F%AD%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B%E4%BB%BB%E5%8A%A1/index.html">
+<meta property="og:site_name" content="YeQuDesu Blog">
+<meta property="og:description" content="2025软工K班结对编程任务https:&#x2F;&#x2F;github.com&#x2F;yequdesu&#x2F;SE-cowork https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1A5UwBaEoc?vd_source&#x3D;0b3fb397d505ec7378499f3e04951949 一、结对探索1.1 队伍基本信息结对编号：114514 ；队伍名称：杨炜组；    学号 姓名 作业博客链接">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/yequdesu-avatar.png">
+<meta property="article:published_time" content="2025-11-23T14:56:25.337Z">
+<meta property="article:modified_time" content="2025-11-23T14:55:35.000Z">
+<meta property="article:author" content="YeQuDesu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/yequdesu-avatar.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "url": "http://example.com/2025/11/23/2025%E8%BD%AF%E5%B7%A5K%E7%8F%AD%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B%E4%BB%BB%E5%8A%A1/",
+  "image": "http://example.com/img/yequdesu-avatar.png",
+  "datePublished": "2025-11-23T14:56:25.337Z",
+  "dateModified": "2025-11-23T14:55:35.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "YeQuDesu",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/yequdesu-logo.jpg"><link rel="canonical" href="http://example.com/2025/11/23/2025%E8%BD%AF%E5%B7%A5K%E7%8F%AD%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B%E4%BB%BB%E5%8A%A1/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'YeQuDesu Blog',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div id="web_bg" style="background-image: url(/img/yequdesu-bg.png);"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/yequdesu-top.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/yequdesu-logo.jpg" alt="Logo"><span class="site-name">YeQuDesu Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">YeQuDesu Blog</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">无标题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-23T14:56:25.337Z" title="发表于 2025-11-23 22:56:25">2025-11-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-11-23T14:55:35.000Z" title="更新于 2025-11-23 22:55:35">2025-11-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><hr>
+<h1 id="2025软工K班结对编程任务"><a href="#2025软工K班结对编程任务" class="headerlink" title="2025软工K班结对编程任务"></a>2025软工K班结对编程任务</h1><p><a target="_blank" rel="noopener" href="https://github.com/yequdesu/SE-cowork">https://github.com/yequdesu/SE-cowork</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1A5UwBaEoc?vd_source=0b3fb397d505ec7378499f3e04951949">https://www.bilibili.com/video/BV1A5UwBaEoc?vd_source&#x3D;0b3fb397d505ec7378499f3e04951949</a></p>
+<h1 id="一、结对探索"><a href="#一、结对探索" class="headerlink" title="一、结对探索"></a><strong>一、结对探索</strong></h1><h2 id="1-1-队伍基本信息"><a href="#1-1-队伍基本信息" class="headerlink" title="1.1 队伍基本信息"></a><strong>1.1 队伍基本信息</strong></h2><p><strong>结对编号：114514 ；队伍名称：杨炜组</strong>；</p>
+<table>
+<thead>
+<tr>
+<th><strong>学号</strong></th>
+<th><strong>姓名</strong></th>
+<th><strong>作业博客链接</strong></th>
+<th><strong>具体分工</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>052301319</td>
+<td>杨恪</td>
+<td></td>
+<td>算法设计，编程实现，视频录制</td>
+</tr>
+<tr>
+<td>152301212</td>
+<td>王炜</td>
+<td></td>
+<td>原型设计，UI设计，bug修复，博客编写</td>
+</tr>
+</tbody></table>
+<h2 id="1-2-结对的过程"><a href="#1-2-结对的过程" class="headerlink" title="1.2 结对的过程"></a>1.2 结对的过程</h2><p>在本次结对编程任务中，我们两人通过在线下宿舍内协作开发。首先，我们共同分析需求，确定了点名系统的核心功能模块。然后，王炜负责原型设计，UI设计，杨恪负责算法设计，编程实现。我们每天晚上都会讨论进度和问题，使用git进行代码版本控制，确保代码质量。</p>
+<h2 id="1-3-非摆拍的两人在讨论设计或结对编程过程的照片"><a href="#1-3-非摆拍的两人在讨论设计或结对编程过程的照片" class="headerlink" title="1.3 非摆拍的两人在讨论设计或结对编程过程的照片"></a>1.3 非摆拍的两人在讨论设计或结对编程过程的照片</h2><div align="center">
+<img src="../2025软工K班结对编程任务/0fd5b4cf7f8bc19b3eab5145489140e7.png" width="50%">
+</div>
+
+<h1 id="二、原型设计"><a href="#二、原型设计" class="headerlink" title="二、原型设计"></a><strong>二、原型设计</strong></h1><h2 id="2-1-原型工具的选择"><a href="#2-1-原型工具的选择" class="headerlink" title="2.1 原型工具的选择"></a>2.1 原型工具的选择</h2><p>我们选择了墨刀作为原型设计工具。墨刀是一款专业的移动端原型设计工具，支持微信小程序风格的组件库，具有良好的交互设计能力和团队协作功能。我们选择它是因为项目是微信小程序，墨刀能准确模拟小程序界面，同时支持快速迭代和反馈收集。</p>
+<h2 id="2-2-遇到的困难与解决方法"><a href="#2-2-遇到的困难与解决方法" class="headerlink" title="2.2 遇到的困难与解决方法"></a>2.2 遇到的困难与解决方法</h2><p>在原型设计过程中，我们遇到的主要困难是小程序特有的交互逻辑，如页面跳转和数据绑定。起初，我们对微信小程序的组件不够熟悉，导致原型交互不够流畅。通过查阅微信官方文档和墨刀教程，我们逐步掌握了小程序的设计规范。同时，我们进行了多次用户测试，发现了导航不够直观的问题，通过调整页面布局解决了这个问题。这个过程让我们深刻认识到原型设计的重要性，以及前期调研对项目成功的关键作用。</p>
+<h2 id="2-3-原型作品链接"><a href="#2-3-原型作品链接" class="headerlink" title="2.3 原型作品链接"></a>2.3 原型作品链接</h2><p><a target="_blank" rel="noopener" href="https://github.com/SuperBriefs/Random-Roll-Call-System-Prototype">https://github.com/SuperBriefs/Random-Roll-Call-System-Prototype</a></p>
+<h2 id="2-4-原型界面图片展示"><a href="#2-4-原型界面图片展示" class="headerlink" title="2.4 原型界面图片展示"></a>2.4 原型界面图片展示</h2><p><strong>学生名单导入页面</strong></p>
+<p>上传学生的Excel名单后导入后台，更新学生数据</p>
+<div align="center">
+<img src="../2025软工K班结对编程任务/image.png" width="50%">
+</div>
+
+<p><strong>课程选择页面</strong></p>
+<p>对正在进行的课程选择，方便管理不同班级，不同课程的学生</p>
+<div align="center">
+<img src="../2025软工K班结对编程任务/image 1.png" width="50%">
+</div>
+
+<p><strong>点名页面</strong></p>
+<p>有顺序和随机两种点名方式，当进行答题时可以进行加分处理，可以选择是否开启随机事件，如果开启随机事件，在点名时会随机出现如分数加倍的随机事件，还可以选择学生出席情况</p>
+<div align="center">
+<img src="../2025软工K班结对编程任务/image 2.png" width="50%">
+</div>
+
+<p><strong>排名页面</strong></p>
+<p>对点名界面的加分情况进行统计，显示在排行榜上，实现了柱状图可视化</p>
+<div align="center">
+<img src="../2025软工K班结对编程任务/image 3.png" width="50%">
+</div>
+
+<p><strong>学生管理页面</strong></p>
+<p>可以添加和删除学生信息，还可以修改学生学号</p>
+<div align="center">
+<img src="../2025软工K班结对编程任务/image 4.png" width="50%">
+</div>
+
+<h2 id="2-6-页面结构详情"><a href="#2-6-页面结构详情" class="headerlink" title="2.6 页面结构详情"></a><strong>2.6 页面结构详情</strong></h2><h3 id="微信小程序页面结构"><a href="#微信小程序页面结构" class="headerlink" title="微信小程序页面结构"></a>微信小程序页面结构</h3><p>项目包含6个主要页面：</p>
+<ol>
+<li><p><strong>导入页面</strong> (<code>pages/import/</code>)</p>
+<ul>
+<li>功能：上传Excel文件批量导入学生信息</li>
+<li>组件：文件选择器、上传按钮、导入结果显示</li>
+</ul>
+</li>
+<li><p><strong>课程选择页面</strong> (<code>pages/course-select/</code>)</p>
+<ul>
+<li>功能：选择当前管理的课程</li>
+<li>组件：课程列表、课程切换</li>
+</ul>
+</li>
+<li><p><strong>点名页面</strong> (<code>pages/roll-call/</code>)</p>
+<ul>
+<li>功能：随机&#x2F;顺序点名，积分计算</li>
+<li>组件：点名按钮、学生信息显示、积分输入表单、随机事件显示</li>
+<li>特性：100ms延迟批量更新机制</li>
+</ul>
+</li>
+<li><p><strong>随机事件管理页面</strong> (<code>pages/events/</code>)</p>
+<ul>
+<li>功能：开启&#x2F;关闭随机事件功能</li>
+<li>组件：开关控件、事件说明</li>
+</ul>
+</li>
+<li><p><strong>排名页面</strong> (<code>pages/ranking/</code>)</p>
+<ul>
+<li>功能：显示积分排行榜</li>
+<li>组件：柱状图、排名列表</li>
+</ul>
+</li>
+<li><p><strong>设置页面</strong> (<code>pages/settings/</code>)</p>
+<ul>
+<li>功能：学生信息管理</li>
+<li>组件：学生列表、添加&#x2F;编辑&#x2F;删除按钮、批量操作</li>
+</ul>
+</li>
+</ol>
+<h2 id="2-5-功能需求"><a href="#2-5-功能需求" class="headerlink" title="2.5 功能需求"></a><strong>2.5 功能需求</strong></h2><h3 id="核心功能需求"><a href="#核心功能需求" class="headerlink" title="核心功能需求"></a>核心功能需求</h3><ol>
+<li><p><strong>学生信息管理</strong></p>
+<ul>
+<li>Excel文件批量导入学生信息</li>
+<li>单个学生信息添加、修改、删除</li>
+<li>学生批量删除操作</li>
+<li>按课程管理学生数据</li>
+</ul>
+</li>
+<li><p><strong>点名功能</strong></p>
+<ul>
+<li>随机点名：基于积分的加权随机选择算法</li>
+<li>顺序点名：按学号顺序循环点名</li>
+<li>积分实时计算和更新</li>
+<li>点名记录保存</li>
+</ul>
+</li>
+<li><p><strong>积分系统</strong></p>
+<ul>
+<li>到达积分（1分）</li>
+<li>复述问题积分（正确+0.5分，错误-1分）</li>
+<li>回答问题积分（0.5-3分）</li>
+<li>Combo连击加成</li>
+<li>随机事件加成</li>
+</ul>
+</li>
+<li><p><strong>随机事件系统</strong></p>
+<ul>
+<li>免扣分：复述错误时免除扣分</li>
+<li>额外加分：额外获得1分奖励</li>
+<li>幸运加倍：所有积分翻倍</li>
+<li>随机事件开关管理</li>
+</ul>
+</li>
+<li><p><strong>数据导出</strong></p>
+<ul>
+<li>积分详单Excel导出</li>
+<li>包含学号、姓名、专业、点名次数、总积分</li>
+</ul>
+</li>
+<li><p><strong>排名统计</strong></p>
+<ul>
+<li>积分排行榜</li>
+<li>柱状图可视化展示</li>
+</ul>
+</li>
+<li><p><strong>课程管理</strong></p>
+<ul>
+<li>多课程支持</li>
+<li>课程切换功能</li>
+</ul>
+</li>
+</ol>
+<h1 id="三、编程实现"><a href="#三、编程实现" class="headerlink" title="三、编程实现"></a><strong>三、编程实现</strong></h1><h2 id="3-1-开发工具库（如文件读取包等）的使用"><a href="#3-1-开发工具库（如文件读取包等）的使用" class="headerlink" title="3.1 开发工具库（如文件读取包等）的使用"></a><strong>3.1 开发工具库（如文件读取包等）的使用</strong></h2><p>后端使用了Express.js框架、MySQL 8.0+数据库、multer文件上传中间件。前端使用了微信小程序原生API。文件读取使用了Node.js的fs模块和xlsx库进行Excel文件解析。</p>
+<h2 id="3-2-代码组织与内部实现设计（类图）"><a href="#3-2-代码组织与内部实现设计（类图）" class="headerlink" title="3.2 代码组织与内部实现设计（类图）"></a><strong>3.2 代码组织与内部实现设计（类图）</strong></h2><p>项目采用MVC架构：</p>
+<ul>
+<li>Model层：Student、Course、RollCall模型类</li>
+<li>View层：微信小程序页面</li>
+<li>Controller层：路由处理函数</li>
+</ul>
+<p>类图：</p>
+<div align="center">
+<img src="../2025软工K班结对编程任务/MVC.svg" width="50%">
+</div>
+
+<h2 id="3-2-1-数据库设计"><a href="#3-2-1-数据库设计" class="headerlink" title="3.2.1 数据库设计"></a><strong>3.2.1 数据库设计</strong></h2><p>系统使用MySQL数据库，包含4个核心表：</p>
+<h3 id="courses表（课程表）"><a href="#courses表（课程表）" class="headerlink" title="courses表（课程表）"></a>courses表（课程表）</h3><table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>类型</th>
+<th>约束</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id</td>
+<td>INT</td>
+<td>PRIMARY KEY AUTO_INCREMENT</td>
+<td>课程ID</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(100)</td>
+<td>NOT NULL</td>
+<td>课程名称</td>
+</tr>
+<tr>
+<td>description</td>
+<td>TEXT</td>
+<td>-</td>
+<td>课程描述</td>
+</tr>
+</tbody></table>
+<h3 id="students表（学生表）"><a href="#students表（学生表）" class="headerlink" title="students表（学生表）"></a>students表（学生表）</h3><table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>类型</th>
+<th>约束</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>student_id</td>
+<td>VARCHAR(20)</td>
+<td>PRIMARY KEY</td>
+<td>学号</td>
+</tr>
+<tr>
+<td>course_id</td>
+<td>INT</td>
+<td>PRIMARY KEY, FOREIGN KEY</td>
+<td>课程ID</td>
+</tr>
+<tr>
+<td>name</td>
+<td>VARCHAR(100)</td>
+<td>NOT NULL</td>
+<td>学生姓名</td>
+</tr>
+<tr>
+<td>major</td>
+<td>VARCHAR(100)</td>
+<td>-</td>
+<td>专业</td>
+</tr>
+<tr>
+<td>roll_call_count</td>
+<td>INT</td>
+<td>DEFAULT 0</td>
+<td>点名次数</td>
+</tr>
+<tr>
+<td>total_score</td>
+<td>DECIMAL(10,2)</td>
+<td>DEFAULT 0.00</td>
+<td>总积分</td>
+</tr>
+</tbody></table>
+<h3 id="scores表（积分记录表）"><a href="#scores表（积分记录表）" class="headerlink" title="scores表（积分记录表）"></a>scores表（积分记录表）</h3><table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>类型</th>
+<th>约束</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id</td>
+<td>INT</td>
+<td>PRIMARY KEY AUTO_INCREMENT</td>
+<td>记录ID</td>
+</tr>
+<tr>
+<td>student_id</td>
+<td>VARCHAR(20)</td>
+<td>NOT NULL, FOREIGN KEY</td>
+<td>学号</td>
+</tr>
+<tr>
+<td>course_id</td>
+<td>INT</td>
+<td>NOT NULL, FOREIGN KEY</td>
+<td>课程ID</td>
+</tr>
+<tr>
+<td>score</td>
+<td>DECIMAL(5,2)</td>
+<td>NOT NULL</td>
+<td>积分值</td>
+</tr>
+<tr>
+<td>timestamp</td>
+<td>TIMESTAMP</td>
+<td>DEFAULT CURRENT_TIMESTAMP</td>
+<td>记录时间</td>
+</tr>
+</tbody></table>
+<h3 id="roll-calls表（点名记录表）"><a href="#roll-calls表（点名记录表）" class="headerlink" title="roll_calls表（点名记录表）"></a>roll_calls表（点名记录表）</h3><table>
+<thead>
+<tr>
+<th>字段名</th>
+<th>类型</th>
+<th>约束</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>id</td>
+<td>INT</td>
+<td>PRIMARY KEY AUTO_INCREMENT</td>
+<td>记录ID</td>
+</tr>
+<tr>
+<td>student_id</td>
+<td>VARCHAR(20)</td>
+<td>NOT NULL, FOREIGN KEY</td>
+<td>学号</td>
+</tr>
+<tr>
+<td>course_id</td>
+<td>INT</td>
+<td>NOT NULL, FOREIGN KEY</td>
+<td>课程ID</td>
+</tr>
+<tr>
+<td>roll_call_time</td>
+<td>TIMESTAMP</td>
+<td>DEFAULT CURRENT_TIMESTAMP</td>
+<td>点名时间</td>
+</tr>
+</tbody></table>
+<p><strong>表关系说明：</strong></p>
+<ul>
+<li>courses.id → students.course_id (1:N)</li>
+<li>courses.id → scores.course_id (1:N)</li>
+<li>courses.id → roll_calls.course_id (1:N)</li>
+<li>students(student_id, course_id) → scores(student_id, course_id) (1:N)</li>
+<li>students(student_id, course_id) → roll_calls(student_id, course_id) (1:N)</li>
+</ul>
+<h2 id="3-2-2-API接口列表"><a href="#3-2-2-API接口列表" class="headerlink" title="3.2.2 API接口列表"></a><strong>3.2.2 API接口列表</strong></h2><h3 id="学生管理接口"><a href="#学生管理接口" class="headerlink" title="学生管理接口"></a>学生管理接口</h3><ul>
+<li><code>GET /api/students?course_id={id}</code> - 获取指定课程的学生列表</li>
+<li><code>POST /api/students?course_id={id}</code> - 添加新学生</li>
+<li><code>PUT /api/students/{student_id}?course_id={id}</code> - 修改学生信息</li>
+<li><code>DELETE /api/students/{student_id}?course_id={id}</code> - 删除指定学生</li>
+</ul>
+<h3 id="点名接口"><a href="#点名接口" class="headerlink" title="点名接口"></a>点名接口</h3><ul>
+<li><code>GET /api/rollCall/random?course_id={id}&amp;randomEventEnabled={true/false}</code> - 随机点名</li>
+<li><code>GET /api/rollCall/sequential?course_id={id}</code> - 顺序点名</li>
+<li><code>POST /api/updateRollCall</code> - 更新点名积分</li>
+</ul>
+<h3 id="排名统计接口"><a href="#排名统计接口" class="headerlink" title="排名统计接口"></a>排名统计接口</h3><ul>
+<li><code>GET /api/scores?course_id={id}&amp;limit={num}</code> - 获取积分排名</li>
+</ul>
+<h3 id="数据导出接口"><a href="#数据导出接口" class="headerlink" title="数据导出接口"></a>数据导出接口</h3><ul>
+<li><code>GET /api/exportScores?course_id={id}</code> - 导出积分Excel文件</li>
+</ul>
+<h3 id="课程管理接口"><a href="#课程管理接口" class="headerlink" title="课程管理接口"></a>课程管理接口</h3><ul>
+<li><code>GET /api/courses</code> - 获取所有课程</li>
+<li><code>POST /api/courses</code> - 创建新课程</li>
+<li><code>PUT /api/courses/{id}</code> - 更新课程信息</li>
+<li><code>DELETE /api/courses/{id}</code> - 删除课程</li>
+</ul>
+<h3 id="文件导入接口"><a href="#文件导入接口" class="headerlink" title="文件导入接口"></a>文件导入接口</h3><ul>
+<li><code>POST /api/importStudents?course_id={id}</code> - 上传Excel文件导入学生</li>
+</ul>
+<h2 id="3-3-说明算法的关键与关键实现部分流程图"><a href="#3-3-说明算法的关键与关键实现部分流程图" class="headerlink" title="3.3 说明算法的关键与关键实现部分流程图"></a><strong>3.3 说明算法的关键与关键实现部分流程图</strong></h2><p>随机点名算法：使用加权随机选择算法，根据学生的积分情况调整选中概率。积分越低的学生权重越大，更容易被选中。</p>
+<div align="center">
+<img src="../2025软工K班结对编程任务/点名.svg" width="50%">
+</div>
+
+<h2 id="3-4-贴出重要的-有价值的代码片段并解释"><a href="#3-4-贴出重要的-有价值的代码片段并解释" class="headerlink" title="3.4 贴出重要的&#x2F;有价值的代码片段并解释"></a><strong>3.4 贴出重要的&#x2F;有价值的代码片段并解释</strong></h2><p>随机点名核心算法（routes&#x2F;rollCall.js）：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 计算权重</span></span><br><span class="line"><span class="keyword">const</span> maxScore = <span class="title class_">Math</span>.<span class="title function_">max</span>(...students.<span class="title function_">map</span>(<span class="function"><span class="params">s</span> =&gt;</span> s.<span class="property">total_score</span>));</span><br><span class="line"><span class="keyword">const</span> weights = students.<span class="title function_">map</span>(<span class="function"><span class="params">s</span> =&gt;</span> maxScore - s.<span class="property">total_score</span> + <span class="number">1</span>);</span><br><span class="line"><span class="keyword">const</span> totalWeight = weights.<span class="title function_">reduce</span>(<span class="function">(<span class="params">sum, w</span>) =&gt;</span> sum + w, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 随机选择</span></span><br><span class="line"><span class="keyword">let</span> random = <span class="title class_">Math</span>.<span class="title function_">random</span>() * totalWeight;</span><br><span class="line"><span class="keyword">let</span> selectedIndex = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; weights.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    random -= weights[i];</span><br><span class="line">    <span class="keyword">if</span> (random &lt;= <span class="number">0</span>) &#123;</span><br><span class="line">        selectedIndex = i;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>此算法实现了加权随机选择：权重 &#x3D; maxScore - total_score + 1，确保积分较低的学生有更高的选中概率，实现教育公平性。</p>
+<h2 id="3-5-性能分析与改进"><a href="#3-5-性能分析与改进" class="headerlink" title="3.5 性能分析与改进"></a><strong>3.5 性能分析与改进</strong></h2><p>通过Chrome DevTools分析，发现setData方法耗时最长。</p>
+<p><strong>优化前性能图：</strong></p>
+<div align="center">
+<img src="../2025软工K班结对编程任务/ad9bb4690f13975024ec8629c6155a63.png" width="50%">
+</div>
+
+<div align="center">
+<img src="../2025软工K班结对编程任务/cf8950178e77b297ba712ac092300788.png" width="50%">
+</div>
+
+<p><strong>优化后性能图：</strong></p>
+<div align="center">
+<img src="../2025软工K班结对编程任务/8a55a20e9e61aca8a2d5d24a89027600.png" width="50%">
+</div>
+
+<div align="center">
+<img src="../2025软工K班结对编程任务/ce6ddfd306fec541b211b8b809b8e79b.png" width="50%">
+</div>
+
+<p><strong>核心优化逻辑</strong></p>
+<ul>
+<li>**数据缓冲区：**添加 pendingUpdates 对象存储待更新的数据</li>
+<li>**延迟批量更新：**100ms 合并执行 setData</li>
+<li>**替换实时 setData：**将二十多次 setData 改为 scheduleUpdate</li>
+<li>**避免内存泄漏：**页面卸载清理定时器</li>
+</ul>
+<h2 id="3-6-单元测试"><a href="#3-6-单元测试" class="headerlink" title="3.6 单元测试"></a><strong>3.6 单元测试</strong></h2><p>测试加权随机选择算法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">test</span>(<span class="string">&#x27;weighted random selection should favor lower scores&#x27;</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> students = [</span><br><span class="line">        &#123; <span class="attr">student_id</span>: <span class="string">&#x27;1&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;张三&#x27;</span>, <span class="attr">total_score</span>: <span class="number">10</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">student_id</span>: <span class="string">&#x27;2&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;李四&#x27;</span>, <span class="attr">total_score</span>: <span class="number">5</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">student_id</span>: <span class="string">&#x27;3&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;王五&#x27;</span>, <span class="attr">total_score</span>: <span class="number">1</span> &#125;</span><br><span class="line">    ];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 计算权重：maxScore=10, 权重分别为1, 6, 10</span></span><br><span class="line">    <span class="keyword">const</span> maxScore = <span class="title class_">Math</span>.<span class="title function_">max</span>(...students.<span class="title function_">map</span>(<span class="function"><span class="params">s</span> =&gt;</span> s.<span class="property">total_score</span>));</span><br><span class="line">    <span class="keyword">const</span> weights = students.<span class="title function_">map</span>(<span class="function"><span class="params">s</span> =&gt;</span> maxScore - s.<span class="property">total_score</span> + <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 验证权重计算正确</span></span><br><span class="line">    <span class="title function_">expect</span>(weights).<span class="title function_">toEqual</span>([<span class="number">1</span>, <span class="number">6</span>, <span class="number">10</span>]);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 验证总权重</span></span><br><span class="line">    <span class="keyword">const</span> totalWeight = weights.<span class="title function_">reduce</span>(<span class="function">(<span class="params">sum, w</span>) =&gt;</span> sum + w, <span class="number">0</span>);</span><br><span class="line">    <span class="title function_">expect</span>(totalWeight).<span class="title function_">toBe</span>(<span class="number">17</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>测试思路：验证权重计算逻辑，确保积分越低的学生获得更高的权重。</p>
+<h2 id="3-7-贴出代码commit记录"><a href="#3-7-贴出代码commit记录" class="headerlink" title="3.7 贴出代码commit记录"></a><strong>3.7 贴出代码commit记录</strong></h2><div align="center">
+<img src="../2025软工K班结对编程任务/image 5.png" width="50%">
+</div>
+
+<h1 id="四、总结反思"><a href="#四、总结反思" class="headerlink" title="四、总结反思"></a><strong>四、总结反思</strong></h1><h2 id="4-1-本次任务的PSP表格"><a href="#4-1-本次任务的PSP表格" class="headerlink" title="4.1 本次任务的PSP表格"></a><strong>4.1 本次任务的PSP表格</strong></h2><table>
+<thead>
+<tr>
+<th>PSP2.1</th>
+<th>Personal Software Process Stages</th>
+<th>预估耗时（分钟）</th>
+<th>实际耗时（分钟）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Planning</td>
+<td>计划</td>
+<td>120</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Estimate</td>
+<td>估计这个任务需要多少时间</td>
+<td>60</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Development</td>
+<td>开发</td>
+<td>800</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>Analysis</td>
+<td>需求分析 (包括学习新技术)</td>
+<td>180</td>
+<td>220</td>
+</tr>
+<tr>
+<td>Design Spec</td>
+<td>生成设计文档</td>
+<td>120</td>
+<td>140</td>
+</tr>
+<tr>
+<td>Design Review</td>
+<td>设计复审</td>
+<td>60</td>
+<td>70</td>
+</tr>
+<tr>
+<td>Coding Standard</td>
+<td>代码规范 (为目前的开发制定合适的规范)</td>
+<td>30</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Design</td>
+<td>具体设计</td>
+<td>200</td>
+<td>250</td>
+</tr>
+<tr>
+<td>Coding</td>
+<td>具体编码</td>
+<td>600</td>
+<td>750</td>
+</tr>
+<tr>
+<td>Code Review</td>
+<td>代码复审</td>
+<td>90</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Test</td>
+<td>测试（自我测试，修改代码，提交修改）</td>
+<td>120</td>
+<td>160</td>
+</tr>
+<tr>
+<td>Reporting</td>
+<td>报告</td>
+<td>60</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Test Report</td>
+<td>测试报告</td>
+<td>45</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Size Measurement</td>
+<td>计算工作量</td>
+<td>30</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Postmortem &amp; Process Improvement Plan</td>
+<td>事后总结, 并提出过程改进计划</td>
+<td>60</td>
+<td>80</td>
+</tr>
+<tr>
+<td>合计</td>
+<td></td>
+<td>2575</td>
+<td>3230</td>
+</tr>
+</tbody></table>
+<h2 id="4-2-学习进度条（每周追加）"><a href="#4-2-学习进度条（每周追加）" class="headerlink" title="4.2 学习进度条（每周追加）"></a><strong>4.2 学习进度条（每周追加）</strong></h2><table>
+<thead>
+<tr>
+<th><strong>第N周</strong></th>
+<th><strong>新增代码（行）</strong></th>
+<th><strong>累计代码（行）</strong></th>
+<th><strong>本周学习耗时(小时)</strong></th>
+<th><strong>累计学习耗时（小时）</strong></th>
+<th><strong>重要成长</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>500</td>
+<td>500</td>
+<td>5</td>
+<td>5</td>
+<td>熟悉Node.js和微信小程序开发</td>
+</tr>
+<tr>
+<td>2</td>
+<td>800</td>
+<td>1300</td>
+<td>12</td>
+<td>17</td>
+<td>掌握数据库设计和API开发</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1000</td>
+<td>2300</td>
+<td>18</td>
+<td>35</td>
+<td>学习前端交互设计和用户体验优化，完成项目集成和测试</td>
+</tr>
+</tbody></table>
+<h2 id="4-3-最初想象中的产品形态、原型设计作品、软件开发成果三者的差距如何？"><a href="#4-3-最初想象中的产品形态、原型设计作品、软件开发成果三者的差距如何？" class="headerlink" title="4.3 最初想象中的产品形态、原型设计作品、软件开发成果三者的差距如何？"></a><strong>4.3 最初想象中的产品形态、原型设计作品、软件开发成果三者的差距如何？</strong></h2><p>最初想象的产品非常复杂，包含AI智能点名等高级功能。但受限于时间和技术水平，原型设计时不得不简化功能。实际开发中，由于微信小程序的限制和后端性能问题，进一步缩减了功能范围。主要差距在于技术实现难度和时间限制，造成了从理想到现实的落差。未来需要更充分的前期技术调研和合理的项目规划。</p>
+<h2 id="4-4-评价你的队友"><a href="#4-4-评价你的队友" class="headerlink" title="4.4 评价你的队友"></a><strong>4.4 评价你的队友</strong></h2><p><strong>王炜评价杨恪：</strong><br>值得学习的地方是算法设计能力和编程实现能力，需要改进的是交流时的表达清晰度。</p>
+<p><strong>杨恪评价王炜：</strong><br>值得学习的地方是原型设计和UI设计能力，需要改进的是bug修复时的耐心程度。</p>
+<h2 id="4-5-结对编程作业心得体会"><a href="#4-5-结对编程作业心得体会" class="headerlink" title="4.5 结对编程作业心得体会"></a><strong>4.5 结对编程作业心得体会</strong></h2><p><strong>王炜：</strong><br>这次作业难度适中，通过线下结对编程学到了很多协作技巧。作为负责原型设计、UI设计、bug修复和博客编写的一方，我深刻体会到前期设计对项目成功的重要性。最大的困难是bug修复，但通过与杨恪的线下讨论，我们共同解决了问题。这次经历让我认识到团队合作在软件开发中的重要性。</p>
+<p><strong>杨恪：</strong><br>作业很有挑战性，完成后的成就感很强。作为负责算法设计、编程实现和视频录制的一方，我在实现随机点名算法时遇到了不少困难，但通过查阅资料和与王炜的线下交流，最终成功解决。对我来说，这次线下结对经历让我认识到团队合作和明确分工对项目效率的提升作用。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">YeQuDesu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/11/23/2025%E8%BD%AF%E5%B7%A5K%E7%8F%AD%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B%E4%BB%BB%E5%8A%A1/">http://example.com/2025/11/23/2025%E8%BD%AF%E5%B7%A5K%E7%8F%AD%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B%E4%BB%BB%E5%8A%A1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">YeQuDesu Blog</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/yequdesu-avatar.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/11/18/SE%E7%BB%84-%E9%80%89%E9%A2%98%E4%B8%8E%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/" title="SE组-选题与需求分析报告"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">SE组-选题与需求分析报告</div></div><div class="info-2"><div class="info-item-1"> 组长博文链接  一、团队集结1.1 组员介绍与任务分工   角色类别 姓名 学号 主要负责内容 说明    设计负责人 杨恪 052301319 界面与交互设计、问答原型、PPT展示 负责设计以及UI   前端开发 江豪 052301237 问答界面实现、前后端接口联调 负责患者端界面   前端开发 刘昭 052306115 前端统筹，前端系统管理 负责前端统筹开发   前端开发 陈张钡 152301115 医生界面的设计 前端医生界面   后端负责人 周晨烁 052306116 后端架构、状态管理 后端主力   后端开发 王炜 152301212 医生端接口实现、性能优化 协助AI检索接入   AI负责人 郑伟 022302217 Prompt设计、NER抽取、RAG检索 AI算法主导   AI工程师 曾立臣 052301116 向量数据库构建与性能优化 检索增强模块   AI工程师 郑圣杰 052301230 gRPC流式通信 AI对接   联调小组 周晨烁 × 郑伟 —— 系统集成、性能测试 -    1.2 团队特色描述我们的团队是一支“AI驱动的全栈先锋队”。核心竞争...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/yequdesu-avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">YeQuDesu</div><div class="author-info-description">Here is yequdesu's blog.</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yequdesu"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Here is yequdesu's blog.</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2025%E8%BD%AF%E5%B7%A5K%E7%8F%AD%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.</span> <span class="toc-text">2025软工K班结对编程任务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E7%BB%93%E5%AF%B9%E6%8E%A2%E7%B4%A2"><span class="toc-number">2.</span> <span class="toc-text">一、结对探索</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-%E9%98%9F%E4%BC%8D%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="toc-number">2.1.</span> <span class="toc-text">1.1 队伍基本信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-%E7%BB%93%E5%AF%B9%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="toc-number">2.2.</span> <span class="toc-text">1.2 结对的过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-%E9%9D%9E%E6%91%86%E6%8B%8D%E7%9A%84%E4%B8%A4%E4%BA%BA%E5%9C%A8%E8%AE%A8%E8%AE%BA%E8%AE%BE%E8%AE%A1%E6%88%96%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B%E8%BF%87%E7%A8%8B%E7%9A%84%E7%85%A7%E7%89%87"><span class="toc-number">2.3.</span> <span class="toc-text">1.3 非摆拍的两人在讨论设计或结对编程过程的照片</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.</span> <span class="toc-text">二、原型设计</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-%E5%8E%9F%E5%9E%8B%E5%B7%A5%E5%85%B7%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 原型工具的选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-%E9%81%87%E5%88%B0%E7%9A%84%E5%9B%B0%E9%9A%BE%E4%B8%8E%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 遇到的困难与解决方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-%E5%8E%9F%E5%9E%8B%E4%BD%9C%E5%93%81%E9%93%BE%E6%8E%A5"><span class="toc-number">3.3.</span> <span class="toc-text">2.3 原型作品链接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-%E5%8E%9F%E5%9E%8B%E7%95%8C%E9%9D%A2%E5%9B%BE%E7%89%87%E5%B1%95%E7%A4%BA"><span class="toc-number">3.4.</span> <span class="toc-text">2.4 原型界面图片展示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-%E9%A1%B5%E9%9D%A2%E7%BB%93%E6%9E%84%E8%AF%A6%E6%83%85"><span class="toc-number">3.5.</span> <span class="toc-text">2.6 页面结构详情</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E9%A1%B5%E9%9D%A2%E7%BB%93%E6%9E%84"><span class="toc-number">3.5.1.</span> <span class="toc-text">微信小程序页面结构</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="toc-number">3.6.</span> <span class="toc-text">2.5 功能需求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82"><span class="toc-number">3.6.1.</span> <span class="toc-text">核心功能需求</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E7%BC%96%E7%A8%8B%E5%AE%9E%E7%8E%B0"><span class="toc-number">4.</span> <span class="toc-text">三、编程实现</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1-%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%BA%93%EF%BC%88%E5%A6%82%E6%96%87%E4%BB%B6%E8%AF%BB%E5%8F%96%E5%8C%85%E7%AD%89%EF%BC%89%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">4.1.</span> <span class="toc-text">3.1 开发工具库（如文件读取包等）的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-%E4%BB%A3%E7%A0%81%E7%BB%84%E7%BB%87%E4%B8%8E%E5%86%85%E9%83%A8%E5%AE%9E%E7%8E%B0%E8%AE%BE%E8%AE%A1%EF%BC%88%E7%B1%BB%E5%9B%BE%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">3.2 代码组织与内部实现设计（类图）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-1-%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1"><span class="toc-number">4.3.</span> <span class="toc-text">3.2.1 数据库设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#courses%E8%A1%A8%EF%BC%88%E8%AF%BE%E7%A8%8B%E8%A1%A8%EF%BC%89"><span class="toc-number">4.3.1.</span> <span class="toc-text">courses表（课程表）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#students%E8%A1%A8%EF%BC%88%E5%AD%A6%E7%94%9F%E8%A1%A8%EF%BC%89"><span class="toc-number">4.3.2.</span> <span class="toc-text">students表（学生表）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scores%E8%A1%A8%EF%BC%88%E7%A7%AF%E5%88%86%E8%AE%B0%E5%BD%95%E8%A1%A8%EF%BC%89"><span class="toc-number">4.3.3.</span> <span class="toc-text">scores表（积分记录表）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#roll-calls%E8%A1%A8%EF%BC%88%E7%82%B9%E5%90%8D%E8%AE%B0%E5%BD%95%E8%A1%A8%EF%BC%89"><span class="toc-number">4.3.4.</span> <span class="toc-text">roll_calls表（点名记录表）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2-2-API%E6%8E%A5%E5%8F%A3%E5%88%97%E8%A1%A8"><span class="toc-number">4.4.</span> <span class="toc-text">3.2.2 API接口列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A6%E7%94%9F%E7%AE%A1%E7%90%86%E6%8E%A5%E5%8F%A3"><span class="toc-number">4.4.1.</span> <span class="toc-text">学生管理接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%82%B9%E5%90%8D%E6%8E%A5%E5%8F%A3"><span class="toc-number">4.4.2.</span> <span class="toc-text">点名接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E5%90%8D%E7%BB%9F%E8%AE%A1%E6%8E%A5%E5%8F%A3"><span class="toc-number">4.4.3.</span> <span class="toc-text">排名统计接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E6%8E%A5%E5%8F%A3"><span class="toc-number">4.4.4.</span> <span class="toc-text">数据导出接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BE%E7%A8%8B%E7%AE%A1%E7%90%86%E6%8E%A5%E5%8F%A3"><span class="toc-number">4.4.5.</span> <span class="toc-text">课程管理接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%AF%BC%E5%85%A5%E6%8E%A5%E5%8F%A3"><span class="toc-number">4.4.6.</span> <span class="toc-text">文件导入接口</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-3-%E8%AF%B4%E6%98%8E%E7%AE%97%E6%B3%95%E7%9A%84%E5%85%B3%E9%94%AE%E4%B8%8E%E5%85%B3%E9%94%AE%E5%AE%9E%E7%8E%B0%E9%83%A8%E5%88%86%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-number">4.5.</span> <span class="toc-text">3.3 说明算法的关键与关键实现部分流程图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-4-%E8%B4%B4%E5%87%BA%E9%87%8D%E8%A6%81%E7%9A%84-%E6%9C%89%E4%BB%B7%E5%80%BC%E7%9A%84%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E5%B9%B6%E8%A7%A3%E9%87%8A"><span class="toc-number">4.6.</span> <span class="toc-text">3.4 贴出重要的&#x2F;有价值的代码片段并解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-5-%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E4%B8%8E%E6%94%B9%E8%BF%9B"><span class="toc-number">4.7.</span> <span class="toc-text">3.5 性能分析与改进</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-6-%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95"><span class="toc-number">4.8.</span> <span class="toc-text">3.6 单元测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-7-%E8%B4%B4%E5%87%BA%E4%BB%A3%E7%A0%81commit%E8%AE%B0%E5%BD%95"><span class="toc-number">4.9.</span> <span class="toc-text">3.7 贴出代码commit记录</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%80%BB%E7%BB%93%E5%8F%8D%E6%80%9D"><span class="toc-number">5.</span> <span class="toc-text">四、总结反思</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E6%9C%AC%E6%AC%A1%E4%BB%BB%E5%8A%A1%E7%9A%84PSP%E8%A1%A8%E6%A0%BC"><span class="toc-number">5.1.</span> <span class="toc-text">4.1 本次任务的PSP表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E5%AD%A6%E4%B9%A0%E8%BF%9B%E5%BA%A6%E6%9D%A1%EF%BC%88%E6%AF%8F%E5%91%A8%E8%BF%BD%E5%8A%A0%EF%BC%89"><span class="toc-number">5.2.</span> <span class="toc-text">4.2 学习进度条（每周追加）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-3-%E6%9C%80%E5%88%9D%E6%83%B3%E8%B1%A1%E4%B8%AD%E7%9A%84%E4%BA%A7%E5%93%81%E5%BD%A2%E6%80%81%E3%80%81%E5%8E%9F%E5%9E%8B%E8%AE%BE%E8%AE%A1%E4%BD%9C%E5%93%81%E3%80%81%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%88%90%E6%9E%9C%E4%B8%89%E8%80%85%E7%9A%84%E5%B7%AE%E8%B7%9D%E5%A6%82%E4%BD%95%EF%BC%9F"><span class="toc-number">5.3.</span> <span class="toc-text">4.3 最初想象中的产品形态、原型设计作品、软件开发成果三者的差距如何？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-4-%E8%AF%84%E4%BB%B7%E4%BD%A0%E7%9A%84%E9%98%9F%E5%8F%8B"><span class="toc-number">5.4.</span> <span class="toc-text">4.4 评价你的队友</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-5-%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B%E4%BD%9C%E4%B8%9A%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A"><span class="toc-number">5.5.</span> <span class="toc-text">4.5 结对编程作业心得体会</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/11/23/2025%E8%BD%AF%E5%B7%A5K%E7%8F%AD%E7%BB%93%E5%AF%B9%E7%BC%96%E7%A8%8B%E4%BB%BB%E5%8A%A1/" title="无标题">无标题</a><time datetime="2025-11-23T14:56:25.337Z" title="发表于 2025-11-23 22:56:25">2025-11-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/11/18/SE%E7%BB%84-%E9%80%89%E9%A2%98%E4%B8%8E%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/" title="SE组-选题与需求分析报告">SE组-选题与需求分析报告</a><time datetime="2025-11-18T13:10:00.000Z" title="发表于 2025-11-18 21:10:00">2025-11-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/11/06/2025%E8%BD%AF%E5%B7%A5K%E7%8F%AD%E4%B8%AA%E4%BA%BA%E7%BC%96%E7%A8%8B%E4%BB%BB%E5%8A%A1/" title="2025软工K班个人编程任务">2025软工K班个人编程任务</a><time datetime="2025-11-06T11:32:00.000Z" title="发表于 2025-11-06 19:32:00">2025-11-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/11/06/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%8D%9A%E5%AE%A2%E4%BD%9C%E4%B8%9A/" title="第一次博客作业">第一次博客作业</a><time datetime="2025-11-06T11:00:00.000Z" title="发表于 2025-11-06 19:00:00">2025-11-06</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By YeQuDesu</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.2</a></span></div><div class="footer_custom_text">Here is yequdesu's blog.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.2"></script><script src="/js/main.js?v=5.5.2"></script><div class="js-pjax"></div><script async data-pjax src="/"></script></div></body></html>
